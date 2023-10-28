@@ -1,0 +1,88 @@
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.Menu a {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 15px;
+    position: relative;
+}
+.Menu a:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+border-bottom:2px solid yellow;
+transition: 0.4s;
+}
+.Menu a:hover::before {
+    width: 90%;
+}
+.Register a {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: green;
+    font-size: 15px;
+    background-color: yellow;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+.Register a:hover {
+    background: transparent;
+    border-bottom: 2px solid yellow;
+
+}
+.h-txt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+
+}
+
+.h-txt span {
+    letter-spacing: 5px;
+}
+
+.h-txt h1 {
+    font-size: 3em;
+}
+
+.h-txt a {
+    color: green;
+    text-decoration: none;
+    background-color: yellow;
+    padding: 10px 10px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+.h-txt a:hover {
+background: transparent;
+border-bottom: 2px solid yellow;
+}
